@@ -1,0 +1,206 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "未进行气体检测和通风即下井作业",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "未佩戴隔离式呼吸保护器具",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "盲目施救",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "井内氧含量严重低于正常值",
+      "type": "环境不安全因素",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "有限空间作业未执行审批制度",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "未对作业人员进行有限空间安全教育培训",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "未配备有限空间作业劳动防护用品",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "项目经理等关键管理人员未到岗履职",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "未设置安全警示标志和围挡",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N9",
+      "name": "井盖封闭形成密闭空间未采取管控措施",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N5",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N6",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N7",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N7",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N7",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N0",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N1",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N8",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N9",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.7
+    }
+  ],
+  "_metadata": {
+    "filename": "重庆秀山县紫金集中受纳锰渣场环境风险防控治理工程“10·19”较大中毒和窒息事故调查报告.pdf",
+    "text_hash": "5f5baef7d4f0c87814a8a22c3cef2cba"
+  }
+}

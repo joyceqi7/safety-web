@@ -1,0 +1,289 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "未全面辨识萃余液取样器管路改造产生的风险并采取有效管控措施",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "操作规程不健全",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "作业人员对异常工况处置不力",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "萃余液取样管改造后引入点与返回点存在液位差，且阀门密闭不严导致碱液倒流",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "干燥塔与氧化液贮槽物理连通且存在压差",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "PL14007-U02后手阀密闭不严",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "碱液进入萃取塔导致双氧水分解爆炸",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        3,
+        3,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "萃余液取样管改造未进行风险辨识和评估",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "萃余液取样管前后4个阀门均处于开启状态",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "氧化液贮槽液位持续上升，物料增加约8.4m³",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N10",
+      "name": "萃取塔进料后液位加速上升，操作人员未及时有效控制",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N11",
+      "name": "双氧水装置停车检修期间工艺管线变更管理不到位",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N12",
+      "name": "萃余液取样管设计变更未经正规设计院审核",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N13",
+      "name": "干燥塔内贮存碱液，与取样管连通",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        3,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N14",
+      "name": "操作人员对DCS报警响应不及时",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N1",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N2",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N3",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.95
+    },
+    {
+      "source": "N4",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N5",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.95
+    },
+    {
+      "source": "N7",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N8",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N9",
+      "target": "N10",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N10",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N11",
+      "target": "N7",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N12",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N13",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N14",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.75
+    }
+  ],
+  "_metadata": {
+    "filename": "W020250120374992263184.pdf",
+    "text_hash": "2d9f41626a85c208a76418232b880258"
+  }
+}

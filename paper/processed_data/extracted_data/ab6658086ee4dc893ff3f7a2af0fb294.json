@@ -1,0 +1,118 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "擅自使用挖掘机挖掘路面",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "挖掘机破坏燃气管线",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        4,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "现场安全管理缺失",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "未进行管线交底或未探明管线位置",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "作业人员违规作业",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "燃气泄漏",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        4,
+        3,
+        3,
+        5
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.95
+    },
+    {
+      "source": "N2",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N1",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.95
+    }
+  ],
+  "_metadata": {
+    "filename": "海淀区羊坊店街道北蜂窝路9号“8·3”一般生产安全事故调查处理情况.pdf",
+    "text_hash": "ab6658086ee4dc893ff3f7a2af0fb294"
+  }
+}

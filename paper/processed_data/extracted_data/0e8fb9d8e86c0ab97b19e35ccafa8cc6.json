@@ -1,0 +1,199 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "未切断154号横移小车电源进入运行区域维修",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "点检人员未辨识设备突然受能危险",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "检修人员对设备状态和安全措施确认不到位",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "作业过程中安全监护、提醒不到位",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "154号横移小车在自动模式下可被意外触发启动",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "金属感应开关可被金属物体触发启动小车",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "宝轻公司未有效督促从业人员执行安全规章制度",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "管理人员对现场履职不力情况失察",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "事故现场保护方式不妥当（擅自焊接）",
+      "type": "人的不安全行为",
+      "features": [
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "N6",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N6",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N6",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N6",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N7",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N7",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N7",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N0",
+      "target": "N4",
+      "relation": "暴露于",
+      "confidence": 0.9
+    },
+    {
+      "source": "N1",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N2",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "relation": "未能阻止",
+      "confidence": 0.7
+    },
+    {
+      "source": "N4",
+      "target": "N5",
+      "relation": "包含",
+      "confidence": 0.9
+    }
+  ],
+  "_metadata": {
+    "filename": "69c35be9436392679fddb7f712b17cc5.pdf",
+    "text_hash": "0e8fb9d8e86c0ab97b19e35ccafa8cc6"
+  }
+}

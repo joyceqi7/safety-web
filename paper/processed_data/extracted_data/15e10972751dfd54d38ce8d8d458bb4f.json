@@ -1,0 +1,334 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "黄某醉酒驾驶",
+      "type": "人的不安全行为",
+      "features": [
+        2,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "黄某超速行驶（86km/h，限速50km/h）",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "黄某疏于观察",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "黄某及乘客未系安全带",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "张某违反禁令标志在行车道停车",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "货车后下部防护装置不符合标准",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "货车轮胎花纹不符合技术标准",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N7",
+      "name": "事发路段无路灯照明",
+      "type": "环境不安全因素",
+      "features": [
+        3,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "道路中央隔离护栏存在缺口",
+      "type": "环境不安全因素",
+      "features": [
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N9",
+      "name": "道路交通标志标线磨损不清",
+      "type": "环境不安全因素",
+      "features": [
+        2,
+        2,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N10",
+      "name": "南平公巡大队未严格落实勤务安排",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N11",
+      "name": "南平公巡大队未严格开展酒驾查处",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N12",
+      "name": "南平公巡大队未及时整治违规停车",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N13",
+      "name": "南川交巡警支队对下属大队失察失管",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N14",
+      "name": "南川工业园区管委会未履行道路设施管理职责",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N15",
+      "name": "南平镇政府未履行属地监管职责",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N16",
+      "name": "兴远运输公司未设置专职监控人员",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N17",
+      "name": "兴远运输公司未对车辆和驾驶员实时监控",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N1",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N2",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N4",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N7",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.5
+    },
+    {
+      "source": "N10",
+      "target": "N11",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N11",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N12",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N13",
+      "target": "N10",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N14",
+      "target": "N7",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N15",
+      "target": "N8",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N15",
+      "target": "N9",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N16",
+      "target": "N17",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N17",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.5
+    },
+    {
+      "source": "N3",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.4
+    }
+  ],
+  "_metadata": {
+    "filename": "重庆南川南平镇“1·20”较大道路交通事故调查报告.pdf",
+    "text_hash": "15e10972751dfd54d38ce8d8d458bb4f"
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "胡**疲劳驾驶",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "胡**超速驾驶",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        5,
+        3,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "彭**低速行驶",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "重庆交运未与胡**签订安全管理协议",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "重庆交运未通过GPS动态监管消除超速隐患",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "渝北大队未查处疲劳驾驶和低速行驶违法行为",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "南岸区道路运输事务中心审查网约车运输证不严",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N7",
+      "name": "四川冠达GPS动态监管存在问题",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N8",
+      "name": "胡**连续驾驶超过4小时仅休息12分钟",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N3",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N4",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N5",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N5",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N0",
+      "target": "N8",
+      "relation": "包含",
+      "confidence": 1.0
+    },
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "伴随",
+      "confidence": 0.5
+    },
+    {
+      "source": "N0",
+      "target": "N2",
+      "relation": "共同导致事故",
+      "confidence": 0.9
+    },
+    {
+      "source": "N1",
+      "target": "N2",
+      "relation": "共同导致事故",
+      "confidence": 0.9
+    }
+  ],
+  "_metadata": {
+    "filename": "G65包茂高速渝邻段“11·2”较大道路交通事故调查报告.pdf",
+    "text_hash": "4e15a04c0b36b463b64482b917ba2e85"
+  }
+}

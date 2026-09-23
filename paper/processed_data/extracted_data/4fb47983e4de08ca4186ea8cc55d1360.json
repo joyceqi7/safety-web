@@ -1,0 +1,245 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "驾驶员杨*乙分心驾驶（观看手机视频、扭头取抽纸）",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "渝DM***号车超员（核载3人实载7人）",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        5,
+        2,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "江**停车起步未按操作规范安全驾驶",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "皖FD0***挂半挂车逾期未检验",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N4",
+      "name": "皖FD0***挂半挂车擅自改变结构（加长、货台高度超标）",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        2,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "皖FD0***挂半挂车轮胎磨损严重（花纹深度不足）",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N6",
+      "name": "皖F38***牵引车左前轮制动管路接头漏气",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N7",
+      "name": "夜间无路灯照明",
+      "type": "环境不安全因素",
+      "features": [
+        4,
+        3,
+        1,
+        2,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N8",
+      "name": "事发路段为下坡直道",
+      "type": "环境不安全因素",
+      "features": [
+        3,
+        2,
+        1,
+        2,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N9",
+      "name": "余*甲未对驾驶员开展安全教育培训",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N10",
+      "name": "余*甲未采取措施消除超员隐患",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        5,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N11",
+      "name": "临时运输团队未签订协议、未登记、无管理制度",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        2,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N12",
+      "name": "杨*甲未制止超员和分心驾驶行为",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "伴随",
+      "confidence": 0.9
+    },
+    {
+      "source": "N0",
+      "target": "N2",
+      "relation": "叠加",
+      "confidence": 0.8
+    },
+    {
+      "source": "N9",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N10",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N11",
+      "target": "N9",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N11",
+      "target": "N10",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N11",
+      "target": "N12",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N12",
+      "target": "N0",
+      "relation": "未制止",
+      "confidence": 0.8
+    },
+    {
+      "source": "N12",
+      "target": "N1",
+      "relation": "未制止",
+      "confidence": 0.8
+    },
+    {
+      "source": "N4",
+      "target": "N2",
+      "relation": "间接影响",
+      "confidence": 0.5
+    },
+    {
+      "source": "N7",
+      "target": "N0",
+      "relation": "增加风险",
+      "confidence": 0.6
+    }
+  ],
+  "_metadata": {
+    "filename": "重庆G50沪渝高速“7·17”较大道路交通事故调查报告.pdf",
+    "text_hash": "4fb47983e4de08ca4186ea8cc55d1360"
+  }
+}

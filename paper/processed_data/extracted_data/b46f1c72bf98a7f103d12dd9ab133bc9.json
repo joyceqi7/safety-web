@@ -1,0 +1,156 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "韩志英违章作业，擅自操作并操作错误",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "1#风机进风口连接软管破裂",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "管廊内硫化氢等有毒有害气体浓度超标",
+      "type": "环境不安全因素",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "救援人员盲目施救，未采取有效防护措施",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "未及时发现并消除违章作业隐患",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "未教育和督促从业人员严格执行规章制度",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "缺乏有毒有害气体报警装置",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "应急预案缺失或应急演练不足",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N5",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N0",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.95
+    },
+    {
+      "source": "N1",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N2",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N7",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N6",
+      "target": "N2",
+      "relation": "加剧",
+      "confidence": 0.7
+    }
+  ],
+  "_metadata": {
+    "filename": "e3c6368c30734636b46ff3635acd85c2.pdf",
+    "text_hash": "b46f1c72bf98a7f103d12dd9ab133bc9"
+  }
+}

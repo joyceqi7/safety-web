@@ -1,0 +1,181 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "作业人员违反操作规程，在悬臂未水平时移动车辆",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "支腿坑盖板被移用后未复位",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "支腿坑无盖板且未设置警戒标志",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "作业前环境隐患排查不充分",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "现场监护人员履职不力",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "安全生产规章制度和操作规程未有效实施",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "常用工装备件准备不足",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        2,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N7",
+      "name": "出坞作业后环境状态确认责任不明确",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N8",
+      "name": "主要负责人安全生产履职不充分",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N1",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 1.0
+    },
+    {
+      "source": "N2",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N5",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N5",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N6",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N7",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N8",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.8
+    }
+  ],
+  "_metadata": {
+    "filename": "8928905e54376d522a6d1b324c4b82ee.pdf",
+    "text_hash": "ab1a44e1ac22693979c356788a541862"
+  }
+}

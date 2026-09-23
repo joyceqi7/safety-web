@@ -1,0 +1,314 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "驾驶员超速行驶",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "制动器热衰减",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "喷淋水箱无水且开关开启导致气压泄漏",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "驾驶员未处置低压报警",
+      "type": "人的不安全行为",
+      "features": [
+        2,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "车辆严重超载（实际总质量16880kg，核定4495kg）",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "长下坡路段（坡度7-8%，长度约2100m）",
+      "type": "环境不安全因素",
+      "features": [
+        4,
+        4,
+        2,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "弯道路段（平曲半径156m）",
+      "type": "环境不安全因素",
+      "features": [
+        3,
+        4,
+        2,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "逆向违规停放车辆",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "平安乡政府未落实红白喜事安全管控措施",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "平安乡政府未安排路面管控巡查",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N10",
+      "name": "竹园派出所未制定勤务日志、未科学安排巡逻",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N11",
+      "name": "竹园派出所未与乡镇建立红白事联动机制",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N12",
+      "name": "竹园公巡中队未指导督促派出所开展路检路查",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N13",
+      "name": "奉节县交巡警大队对乡镇指导不够",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N14",
+      "name": "车辆改装（加装喷淋装置、货箱尺寸超标）",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        4,
+        3,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N15",
+      "name": "车辆注册登记违规（整备质量不符、检验不规范）",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N4",
+      "target": "N1",
+      "relation": "加剧",
+      "confidence": 0.8
+    },
+    {
+      "source": "N2",
+      "target": "N1",
+      "relation": "加剧",
+      "confidence": 0.9
+    },
+    {
+      "source": "N1",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N5",
+      "target": "N0",
+      "relation": "促使",
+      "confidence": 0.8
+    },
+    {
+      "source": "N6",
+      "target": "N0",
+      "relation": "促使",
+      "confidence": 0.7
+    },
+    {
+      "source": "N7",
+      "target": "N0",
+      "relation": "增加碰撞风险",
+      "confidence": 0.6
+    },
+    {
+      "source": "N8",
+      "target": "N7",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N9",
+      "target": "N7",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N10",
+      "target": "N7",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N11",
+      "target": "N8",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N12",
+      "target": "N10",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N13",
+      "target": "N12",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N14",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N15",
+      "target": "N14",
+      "relation": "导致",
+      "confidence": 0.8
+    }
+  ],
+  "_metadata": {
+    "filename": "重庆奉节平安乡YA05乡道“1·8”较大道路交通事故调查报告(1).pdf",
+    "text_hash": "ab4149d69264d3a5fc231431d1c94732"
+  }
+}

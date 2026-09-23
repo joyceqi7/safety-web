@@ -1,0 +1,25 @@
+# Local environments and secrets
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*access.txt
+
+# Runtime and authoring artifacts
+runtime/
+output/
+.playwright-cli/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.log
+*.zip
+*.before-*
+*.pre_*
+.DS_Store
+Thumbs.db

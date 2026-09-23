@@ -1,0 +1,226 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "防护栏杆未按规范搭设",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "拆除防护栏杆后未按规范恢复",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "未按要求开展自检及互检",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "管理人员未明确专人进行过程检查和控制",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "日常巡（检）查工作不到位",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "主要负责人督促检查不力",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "未加强全员安全生产责任制监督考核",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N7",
+      "name": "未督促从业人员严格执行规章制度",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N8",
+      "name": "未将事故隐患排查治理情况向从业人员通报",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N9",
+      "name": "对承包单位统一协调管理不力",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N10",
+      "name": "事故现场保护不力，变动防护栏杆未标记",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        2,
+        2,
+        3,
+        1
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N11",
+      "name": "事故发生后未及时报告",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        2,
+        2,
+        3,
+        1
+      ],
+      "is_high_risk": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "N1",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N2",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N3",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N5",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N5",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N6",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N7",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N8",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.5
+    },
+    {
+      "source": "N9",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.7
+    }
+  ],
+  "_metadata": {
+    "filename": "820b7dd1b9e539eb6e7f8db3fcf24e77.pdf",
+    "text_hash": "fab69170d36c1bd53d38fd3135ec914c"
+  }
+}

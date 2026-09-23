@@ -1,0 +1,224 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "未对有限空间进行风险辨识",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "未落实作业审批制度",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "未配备气体检测仪等防护装备",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        2,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "作业人员未佩戴呼吸防护用品",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        5,
+        2,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "未进行机械通风",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "未对作业人员进行安全培训",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "未制定应急预案或未演练",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "污水泵站有限空间内硫化氢等有毒气体聚集",
+      "type": "环境不安全因素",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "监护人员未履行监护职责",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "发包方未对承包方进行有效监管",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N7",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N1",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N2",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N5",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N5",
+      "target": "N8",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N6",
+      "target": "N8",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N9",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N9",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N9",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N9",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N9",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N4",
+      "target": "N7",
+      "relation": "加剧",
+      "confidence": 0.9
+    },
+    {
+      "source": "N3",
+      "target": "N7",
+      "relation": "暴露于",
+      "confidence": 1.0
+    },
+    {
+      "source": "N7",
+      "target": "N3",
+      "relation": "导致中毒",
+      "confidence": 1.0
+    }
+  ],
+  "_metadata": {
+    "filename": "ce713a54fb26b5e21efb0d076bdfa5f0.pdf",
+    "text_hash": "18125748182ade07d8f02475ef3c6fd4"
+  }
+}

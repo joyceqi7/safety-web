@@ -1,0 +1,144 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "燃气设备设施存在缺陷",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "燃气使用工序未进行专项隐患识别",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "应急预案编制不规范",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N3",
+      "name": "燃气泄漏",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "燃气爆炸",
+      "type": "环境不安全因素",
+      "features": [
+        2,
+        5,
+        2,
+        5,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "人员伤亡",
+      "type": "环境不安全因素",
+      "features": [
+        2,
+        5,
+        1,
+        5,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "燃气改电后未做专项隐患识别",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "燃气供应单位关停",
+      "type": "管理缺陷",
+      "features": [
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "is_high_risk": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N1",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N3",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.95
+    },
+    {
+      "source": "N4",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 1.0
+    },
+    {
+      "source": "N6",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.7
+    }
+  ],
+  "_metadata": {
+    "filename": "顺义区“12·3”较大燃气爆炸事故整改和防范措施落实情况评估报告.pdf",
+    "text_hash": "a4a4a9ba3c0c90f4117460ea2b38207f"
+  }
+}

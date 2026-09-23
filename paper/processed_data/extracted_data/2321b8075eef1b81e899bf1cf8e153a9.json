@@ -1,0 +1,194 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "作业人员违规作业、违章指挥",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "操作平台搭设未报告、缺少管理和监督",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "操作平台堆放材料",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "无资质人员作业",
+      "type": "人的不安全行为",
+      "features": [
+        2,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "安全教育培训和安全交底不到位",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "未在事发现场设置安全管理人员",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "未能及时发现并制止安全违法违规行为",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "监理单位履行监理职责不到位",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "平台坍塌",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        2,
+        3,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "高处坠落至通风井底部（约20米）",
+      "type": "环境不安全因素",
+      "features": [
+        2,
+        5,
+        1,
+        2,
+        5
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N1",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N5",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N6",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N7",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N2",
+      "target": "N8",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N8",
+      "target": "N9",
+      "relation": "导致",
+      "confidence": 1.0
+    }
+  ],
+  "_metadata": {
+    "filename": "北京通州综合交通枢纽工程01标段4.29一般生产安全事故调查处理情况（公示发布）.pdf",
+    "text_hash": "2321b8075eef1b81e899bf1cf8e153a9"
+  }
+}

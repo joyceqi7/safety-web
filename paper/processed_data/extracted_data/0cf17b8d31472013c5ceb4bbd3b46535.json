@@ -1,0 +1,200 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "作业人员赵化龙在未采取安全措施的情况下进入管道进行焊接作业",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "氩弧焊焊丝无绝缘保护，在引弧时碰到管道内壁导致触电",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "高温潮湿环境导致人体皮肤电阻和绝缘性能降低",
+      "type": "环境不安全因素",
+      "features": [
+        3,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "检通公司未对从业人员开展入职三级安全教育",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "检通公司未制定管道焊接作业方案并进行安全技术交底",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "中石化建六分公司作业票管理制度执行流于形式",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N6",
+      "name": "中石化建六分公司未有效落实对作业现场的安全监护",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "中石化建六分公司未对分包单位安全生产工作实施统一协调管理",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "检通公司现场负责人殷建未对作业现场风险进行辨识",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "中石化建六分公司项目部主要负责人未落实安全生产责任制",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N3",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N5",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N6",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N7",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N8",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N9",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N9",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N2",
+      "target": "N0",
+      "relation": "增加风险",
+      "confidence": 0.6
+    },
+    {
+      "source": "N1",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    }
+  ],
+  "_metadata": {
+    "filename": "6e01361baba8b0fd18d25a78c36ff55f.pdf",
+    "text_hash": "0cf17b8d31472013c5ceb4bbd3b46535"
+  }
+}

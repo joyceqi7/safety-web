@@ -1,0 +1,20 @@
+{
+    default_sni 47.99.242.201
+    admin 127.0.0.1:2019
+    log {
+        level INFO
+    }
+}
+https://47.99.242.201 {
+    tls {
+        issuer acme {
+            dir https://acme-v02.api.letsencrypt.org/directory
+            profile shortlived
+        }
+    }
+    request_body {
+        max_size 12MB
+    }
+    encode gzip
+    reverse_proxy 127.0.0.1:8000
+}

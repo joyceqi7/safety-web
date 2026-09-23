@@ -1,0 +1,327 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "未进行气体检测和通风即下井作业",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "未佩戴安全防护装备（如防毒面具）",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "盲目施救（未采取防护措施下井）",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "未安装导轨导致人员必须下井作业",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        2,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "污水泵站井下存在硫化氢有毒气体",
+      "type": "环境不安全因素",
+      "features": [
+        4,
+        5,
+        4,
+        4,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "未制定井下作业安全规章制度和操作规程",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "未提供符合标准的劳动防护用品",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "未制定并实施生产安全事故应急预案",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "未向作业人员告知危险因素和应急措施",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "违法转包给不具备资质的自然人",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N10",
+      "name": "未按设计图纸施工（未安装导轨）",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N11",
+      "name": "监理单位未检查施工人员资格和施工质量",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N12",
+      "name": "建设单位未认真履行验收职责",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N13",
+      "name": "建设单位委托不具备安全生产条件的单位运维",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N14",
+      "name": "属地政府安全监管不到位",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N15",
+      "name": "行业主管部门未有效组织推动和验收",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N16",
+      "name": "水务部门未将设施纳入行业管理并巡视",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N9",
+      "target": "N10",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N10",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 1.0
+    },
+    {
+      "source": "N5",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N6",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N7",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N8",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N0",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N1",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N11",
+      "target": "N10",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N12",
+      "target": "N10",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N13",
+      "target": "N9",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N14",
+      "target": "N11",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N15",
+      "target": "N12",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N16",
+      "target": "N14",
+      "relation": "导致",
+      "confidence": 0.6
+    }
+  ],
+  "_metadata": {
+    "filename": "W020241128362819248758.pdf",
+    "text_hash": "09cd705fd684a3d7bd86070c9cc99626"
+  }
+}

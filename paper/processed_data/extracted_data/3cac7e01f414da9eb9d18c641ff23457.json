@@ -1,0 +1,194 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "驾驶员注意力分散、操作不当",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "网约车驾驶员安全培训不足",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "邱唐租赁公司未按规定开展岗前安全教育",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "万顺叫车重庆公司未进行岗前教育培训考核",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "事故路段违规设置临时停车位",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N5",
+      "name": "潼南区交通局安全监督检查措施不力",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N6",
+      "name": "潼南区公安局交巡警支队隐患排查不到位",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N7",
+      "name": "潼南区城市管理局对临时停车位失察失管",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N8",
+      "name": "大佛街道办事处对临时停车位底数不清",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N9",
+      "name": "永川区交通局督促企业整改不力",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "N1",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N2",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "增加风险",
+      "confidence": 0.6
+    },
+    {
+      "source": "N5",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N6",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N7",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N8",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N9",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.7
+    }
+  ],
+  "_metadata": {
+    "filename": "重庆潼南大佛街道建设路“10·2”较大道路交通事故调查报告.pdf",
+    "text_hash": "3cac7e01f414da9eb9d18c641ff23457"
+  }
+}

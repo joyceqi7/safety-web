@@ -1,0 +1,155 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "作业人员未进行吹扫旧管道余气步骤",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "作业人员违章切割拆除旧燃气管道",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "旧燃气管道内存在残余气体",
+      "type": "物的不安全状态",
+      "features": [
+        4,
+        5,
+        2,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "室内存在能量源（如明火、电火花等）",
+      "type": "环境不安全因素",
+      "features": [
+        3,
+        5,
+        2,
+        3,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "润亚环宇公司安全培训不到位，作业人员缺乏安全知识",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "润亚环宇公司未及时消除违章作业隐患",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "泰德市政公司未督促作业人员执行安全规程",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N4",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N5",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N5",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N6",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N6",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N0",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 1.0
+    },
+    {
+      "source": "N1",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 1.0
+    },
+    {
+      "source": "N2",
+      "target": "N3",
+      "relation": "与...共同作用",
+      "confidence": 1.0
+    }
+  ],
+  "_metadata": {
+    "filename": "北京市润亚环宇建筑工程有限公司7.20一般生产安全事故调查处理情况.pdf",
+    "text_hash": "3e3a31d4db90097474c5b2d184c3e857"
+  }
+}

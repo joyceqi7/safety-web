@@ -1,0 +1,256 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "起重作业人员未设置警戒围蔽设施",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "起重作业人员在吊物不稳固状态下松钩",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "起重作业人员未有效识别吊装物件放置不平稳风险",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        4,
+        4,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "1#分配电箱搁置在临时槽钢上未固定",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "2#分配电箱压到1#分配电箱所垫槽钢导致失稳",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "高重心窄长型分配电箱易倾倒",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "作业人员程建明被劝离后擅自返回起重作业现场",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        2,
+        3,
+        1
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "兴海联公司未有效实施起重作业安全管理规定",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "江南造船公司对承包单位统一协调管理不力",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "上建作业区未统一调度避免多班组多工种交叉作业",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N10",
+      "name": "起重班组长布置作业时未同时布置安全工作",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N11",
+      "name": "作业区对吊装作业风险研判不到位",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N7",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N7",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N7",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N8",
+      "target": "N9",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N9",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N10",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N10",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N11",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N11",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N0",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N1",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N2",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N3",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N4",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N5",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.7
+    }
+  ],
+  "_metadata": {
+    "filename": "4958bc2dd2760d116a754b2b36944543.pdf",
+    "text_hash": "c6fd78aa39391561ed00e38a0259678e"
+  }
+}

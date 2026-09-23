@@ -1,0 +1,371 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "外护管破损（玻璃纤维增强塑料脆性开裂）",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "保温层失效（聚氨酯泡沫塑料被地下水破坏）",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "工作钢管腐蚀减薄形成砂眼",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "管道内压超出残余壁厚承载能力",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        3,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "管道技术档案资料缺失",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N5",
+      "name": "日常巡检针对性实效性差",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N6",
+      "name": "未对管道进行风险辨识评估",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "隐患排查治理不到位",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "应急处置机制不健全（信息识别、上报、联动）",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "应急物资装备配备不足（防烫服、抽水泵等）",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N10",
+      "name": "应急教育和培训流于形式",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N11",
+      "name": "客服人员未按应急流程上报（惯性派单）",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N12",
+      "name": "现场人员未立即报告负责人或调度中心",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N13",
+      "name": "未迅速控制危险源（关闭阀门延迟）",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N14",
+      "name": "事发时处于凌晨，人员熟睡",
+      "type": "环境不安全因素",
+      "features": [
+        2,
+        4,
+        2,
+        5,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N15",
+      "name": "地下室采光井挡水台高度不足（20-26cm）",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N16",
+      "name": "热力井台导致通道变窄（0.6m）",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        3,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N17",
+      "name": "土壤中氯离子和硫酸根离子含量高",
+      "type": "环境不安全因素",
+      "features": [
+        3,
+        3,
+        4,
+        5,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N18",
+      "name": "管道敷设于水泥管沟内，盖板缺失，沟内积水",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        3,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N1",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N2",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N4",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N5",
+      "target": "N7",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N6",
+      "target": "N7",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N7",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N8",
+      "target": "N11",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N8",
+      "target": "N12",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N8",
+      "target": "N13",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N9",
+      "target": "N13",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N10",
+      "target": "N11",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N10",
+      "target": "N12",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N11",
+      "target": "N13",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N12",
+      "target": "N13",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N14",
+      "target": "N15",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N15",
+      "target": "N16",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N17",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N18",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.7
+    }
+  ],
+  "_metadata": {
+    "filename": "北京市热力集团有限责任公司“11·20”一般生产安全事故调查报告.pdf",
+    "text_hash": "f719bfb6504a1783289c6f5a5c2979fb"
+  }
+}

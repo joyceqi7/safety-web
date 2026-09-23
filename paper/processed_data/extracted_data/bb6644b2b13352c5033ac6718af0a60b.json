@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "违章作业（未按工艺封焊即松钩）",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "总段坍塌（结构失稳）",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        3,
+        4,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "安全管理制度不完善（吊装作业规定缺失）",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "风险辨识不到位（未识别二次定位风险）",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "安全培训不足（作业人员缺乏安全操作知识）",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N5",
+      "name": "现场监管缺失（重大吊装无全程监管）",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "外包单位管理衔接不足",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N2",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N5",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N6",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.5
+    }
+  ],
+  "_metadata": {
+    "filename": "542384c74ddf310936d0702eaff2558d.pdf",
+    "text_hash": "bb6644b2b13352c5033ac6718af0a60b"
+  }
+}

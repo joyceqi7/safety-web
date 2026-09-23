@@ -1,0 +1,270 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "小型客车超速行驶（88km/h，限速60km/h）",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "小型客车超员载客（核载7人，实载9人）",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "重型货车故障后未开启危险报警闪光灯、示廓灯和后位灯",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "重型货车故障后未按规定摆放警告标志",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "重型货车尾部标志板、反光标识不符合安全技术标准",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "重型货车离合器片磨蚀导致故障停驶",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N6",
+      "name": "事发路段路灯未开启照明（夜间有轻雾）",
+      "type": "环境不安全因素",
+      "features": [
+        3,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "盛智易联重庆公司未落实GPS动态监控",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "盛智易联重庆公司未督促安装摄像头，无法监控超员",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "垚鑫汽车沙坪坝公司未对驾驶员进行安全教育培训",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N10",
+      "name": "垚鑫汽车沙坪坝公司未对车辆卫星定位装置进行监控",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N11",
+      "name": "齐源运输公司未对挂靠车辆开展隐患排查",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N12",
+      "name": "齐源运输公司未发现驾驶员更换，未进行安全培训",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N13",
+      "name": "贝尔特物流公司未对挂车开展隐患排查",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "N7",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N10",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N8",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N9",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N9",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N11",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N12",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N12",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N13",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N6",
+      "target": "N0",
+      "relation": "加剧",
+      "confidence": 0.6
+    },
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "伴随",
+      "confidence": 0.5
+    },
+    {
+      "source": "N2",
+      "target": "N3",
+      "relation": "伴随",
+      "confidence": 0.8
+    },
+    {
+      "source": "N4",
+      "target": "N2",
+      "relation": "加剧",
+      "confidence": 0.6
+    }
+  ],
+  "_metadata": {
+    "filename": "重庆南川“7·2”较大道路交通事故调查报告.pdf",
+    "text_hash": "d68b85b47b5a9269d3e06f5546a21a07"
+  }
+}

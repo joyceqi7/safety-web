@@ -1,0 +1,332 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "天然气管道未加装通长套管保护",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "天然气管道与热力管沟水平净距不足",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "PVC污水管道破损",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "热力管沟内潮湿、含腐蚀性介质的环境",
+      "type": "环境不安全因素",
+      "features": [
+        4,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N4",
+      "name": "燃气管道防腐层失效",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "钢管腐蚀穿孔",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "天然气泄漏并沿热力管沟蔓延",
+      "type": "环境不安全因素",
+      "features": [
+        2,
+        5,
+        3,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "用户未安装燃气泄漏报警装置",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        2,
+        2,
+        1
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "用户两次点火操作",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        5,
+        1,
+        1,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "施工单位未按设计规范施工",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N10",
+      "name": "监理单位未严格履行监理职责",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N11",
+      "name": "建设单位验收审核不严",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N12",
+      "name": "检测单位未及时反馈检测结果",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N13",
+      "name": "燃气公司未及时督促检测反馈",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N14",
+      "name": "应急处置不及时、不规范",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N15",
+      "name": "物业公司未能提供地下管网资料",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "N9",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.95
+    },
+    {
+      "source": "N9",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N10",
+      "target": "N0",
+      "relation": "未阻止",
+      "confidence": 0.9
+    },
+    {
+      "source": "N10",
+      "target": "N1",
+      "relation": "未阻止",
+      "confidence": 0.9
+    },
+    {
+      "source": "N11",
+      "target": "N0",
+      "relation": "未发现",
+      "confidence": 0.85
+    },
+    {
+      "source": "N11",
+      "target": "N1",
+      "relation": "未发现",
+      "confidence": 0.85
+    },
+    {
+      "source": "N0",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N1",
+      "target": "N3",
+      "relation": "加剧",
+      "confidence": 0.7
+    },
+    {
+      "source": "N2",
+      "target": "N3",
+      "relation": "加剧",
+      "confidence": 0.8
+    },
+    {
+      "source": "N3",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N4",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N5",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.95
+    },
+    {
+      "source": "N2",
+      "target": "N6",
+      "relation": "提供通道",
+      "confidence": 0.9
+    },
+    {
+      "source": "N6",
+      "target": "N8",
+      "relation": "形成爆炸性环境",
+      "confidence": 0.95
+    },
+    {
+      "source": "N7",
+      "target": "N8",
+      "relation": "未预警",
+      "confidence": 0.8
+    },
+    {
+      "source": "N12",
+      "target": "N13",
+      "relation": "未及时反馈",
+      "confidence": 0.9
+    },
+    {
+      "source": "N13",
+      "target": "N4",
+      "relation": "未及时处理",
+      "confidence": 0.8
+    },
+    {
+      "source": "N14",
+      "target": "N6",
+      "relation": "未及时切断",
+      "confidence": 0.85
+    },
+    {
+      "source": "N15",
+      "target": "N14",
+      "relation": "影响排查",
+      "confidence": 0.6
+    }
+  ],
+  "_metadata": {
+    "filename": "丰台区“7·31”燃气爆燃事故调查报告.pdf",
+    "text_hash": "f8ab9a9f094ffa83d5a4a4cfc34c3925"
+  }
+}

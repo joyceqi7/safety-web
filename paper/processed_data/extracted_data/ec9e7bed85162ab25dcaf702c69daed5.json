@@ -1,0 +1,175 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "除尘器钢结构强度不足",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "除尘器设计缺陷",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "隐患排查不到位",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "承包商管理不到位",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N4",
+      "name": "安全培训不足",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N5",
+      "name": "设备维护保养不足",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "现场作业人员违章操作",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "安全监管不力",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N8",
+      "name": "应急预案缺失",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N1",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N2",
+      "target": "N0",
+      "relation": "未能发现",
+      "confidence": 0.8
+    },
+    {
+      "source": "N3",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N4",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N5",
+      "target": "N0",
+      "relation": "加剧",
+      "confidence": 0.7
+    },
+    {
+      "source": "N7",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N0",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.5
+    },
+    {
+      "source": "N8",
+      "target": "N6",
+      "relation": "导致救援困难",
+      "confidence": 0.6
+    }
+  ],
+  "_metadata": {
+    "filename": "3d4d2ff9e9a9a6c4a1d24f2fe81b715e.pdf",
+    "text_hash": "ec9e7bed85162ab25dcaf702c69daed5"
+  }
+}

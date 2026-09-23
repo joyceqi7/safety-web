@@ -1,0 +1,212 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "调压器功能失效",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "使用非燃气专用软管",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "软管老化强度降低",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "液化石油气钢瓶阀门和供气管道开关均开启",
+      "type": "人的不安全行为",
+      "features": [
+        2,
+        5,
+        2,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "电磁切断阀不能有效切断气源",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "燃气持续泄漏扩散",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        3,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "面点间冰柜启动产生电气火花",
+      "type": "环境不安全因素",
+      "features": [
+        3,
+        5,
+        2,
+        2,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "爆炸性混合气体形成",
+      "type": "环境不安全因素",
+      "features": [
+        2,
+        5,
+        3,
+        3,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "燃气供应企业安全管理不到位",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "政府监管不到位",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N1",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N2",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N3",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N4",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N5",
+      "target": "N7",
+      "relation": "导致",
+      "confidence": 0.95
+    },
+    {
+      "source": "N6",
+      "target": "N7",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N7",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.0
+    },
+    {
+      "source": "N8",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N8",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N8",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N9",
+      "target": "N8",
+      "relation": "导致",
+      "confidence": 0.6
+    }
+  ],
+  "_metadata": {
+    "filename": "怀柔区怀柔镇北京红螺泉垂钓园“6·26”一般生产安全事故调查处理情况.pdf",
+    "text_hash": "ef031c8d69e5678446801df22c874015"
+  }
+}

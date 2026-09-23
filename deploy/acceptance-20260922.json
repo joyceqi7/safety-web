@@ -1,0 +1,43 @@
+{
+  "redirect": 308,
+  "unauthenticated": 401,
+  "reports": 103,
+  "models": {
+    "GATv2": "passed",
+    "HierarchicalGATv2": "passed",
+    "UncertaintyGATv2": "passed",
+    "MultiScaleGATv2": "passed",
+    "DynamicTemporalGATv2": "passed",
+    "GATv2Transformer": "passed"
+  },
+  "live_extraction_nodes": 6,
+  "tls": {
+    "issuer": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Let's Encrypt"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "YE2"
+        ]
+      ]
+    ],
+    "expires": "Sep 29 01:15:24 2026 GMT",
+    "san": [
+      [
+        "IP Address",
+        "47.99.242.201"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "曹**转弯未避让直行车辆",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "徐**超速行驶（83km/h，限速60km/h）",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        4,
+        2,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "方城县鸿兴物流有限公司GPS动态监控夜间无人值守",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N3",
+      "name": "方城县鸿兴物流有限公司未有效落实主管部门整改要求",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N4",
+      "name": "忠县交巡警大队对事故路段超速违法行为打击力度不够",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        3,
+        3,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N5",
+      "name": "忠县交巡警大队未落实事故平交路口安全隐患排查治理",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "忠县交通局对事故平交路口人行横道安全岛、左转导线缺失失察",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N7",
+      "name": "方城县交通局对鸿兴物流GPS夜间无人值守问题推进整改不力",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N8",
+      "name": "重庆新生港建设发展有限公司未认真推动事故平交路口安全隐患整改",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N9",
+      "name": "事故平交路口缺少信号灯、安全岛、左转导线等安全设施",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N10",
+      "name": "事发夜间无路灯照明",
+      "type": "环境不安全因素",
+      "features": [
+        3,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "共同导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N2",
+      "target": "N1",
+      "relation": "未能制止",
+      "confidence": 0.8
+    },
+    {
+      "source": "N3",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N4",
+      "target": "N1",
+      "relation": "未能有效遏制",
+      "confidence": 0.7
+    },
+    {
+      "source": "N5",
+      "target": "N9",
+      "relation": "未治理",
+      "confidence": 0.9
+    },
+    {
+      "source": "N6",
+      "target": "N9",
+      "relation": "失察",
+      "confidence": 0.8
+    },
+    {
+      "source": "N7",
+      "target": "N2",
+      "relation": "整改不力",
+      "confidence": 0.8
+    },
+    {
+      "source": "N8",
+      "target": "N9",
+      "relation": "未推动整改",
+      "confidence": 0.8
+    },
+    {
+      "source": "N9",
+      "target": "N0",
+      "relation": "增加事故风险",
+      "confidence": 0.6
+    },
+    {
+      "source": "N10",
+      "target": "N0",
+      "relation": "影响观察",
+      "confidence": 0.5
+    }
+  ],
+  "_metadata": {
+    "filename": "忠县新生港“6·3”较大道路交通事故调查报告.pdf",
+    "text_hash": "fee89b53258ce203ce38949089616d2e"
+  }
+}

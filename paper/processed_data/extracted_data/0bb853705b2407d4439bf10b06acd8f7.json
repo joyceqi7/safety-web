@@ -1,0 +1,263 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "大棚覆盖材料为易燃材质",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        2,
+        4,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "外来火源",
+      "type": "环境不安全因素",
+      "features": [
+        2,
+        5,
+        5,
+        5,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "大棚内居住人员夜间未能及时发现起火",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "发现起火后未第一时间逃生，而是收拾财物",
+      "type": "人的不安全行为",
+      "features": [
+        2,
+        5,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "大棚缺乏防火安全设计，防灭火、应急避险设施不健全",
+      "type": "物的不安全状态",
+      "features": [
+        4,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "种植人员防火安全意识不强",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N6",
+      "name": "大棚内堆放杂物、棚外杂草未及时清理",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        3,
+        2,
+        3,
+        3
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N7",
+      "name": "大棚内使用大功率电器，电气线路敷设不规范",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "顺义区农业农村局履行行业安全管理监督职责不力",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "杨镇政府履行属地管理、监督职责不到位",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N10",
+      "name": "东焦各庄村村委会未严格落实大棚火灾隐患及人员居住问题排查整治要求",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N11",
+      "name": "部分大棚位于架空电力线路保护区内",
+      "type": "环境不安全因素",
+      "features": [
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N12",
+      "name": "无焊工作业证人员使用电焊机动火作业",
+      "type": "人的不安全行为",
+      "features": [
+        2,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N1",
+      "target": "N0",
+      "relation": "引燃",
+      "confidence": 0.9
+    },
+    {
+      "source": "N0",
+      "target": "N2",
+      "relation": "导致火势迅速蔓延，使被困人员难以逃生",
+      "confidence": 0.95
+    },
+    {
+      "source": "N2",
+      "target": "N3",
+      "relation": "导致被困人员未能及时逃生",
+      "confidence": 0.8
+    },
+    {
+      "source": "N4",
+      "target": "N2",
+      "relation": "导致人员无法及时发现火情并逃生",
+      "confidence": 0.85
+    },
+    {
+      "source": "N5",
+      "target": "N6",
+      "relation": "导致杂物堆积",
+      "confidence": 0.7
+    },
+    {
+      "source": "N5",
+      "target": "N7",
+      "relation": "导致违规用电",
+      "confidence": 0.75
+    },
+    {
+      "source": "N8",
+      "target": "N5",
+      "relation": "导致安全意识薄弱",
+      "confidence": 0.8
+    },
+    {
+      "source": "N9",
+      "target": "N5",
+      "relation": "导致监管缺失",
+      "confidence": 0.85
+    },
+    {
+      "source": "N10",
+      "target": "N6",
+      "relation": "导致隐患未整改",
+      "confidence": 0.9
+    },
+    {
+      "source": "N10",
+      "target": "N7",
+      "relation": "导致隐患未整改",
+      "confidence": 0.9
+    },
+    {
+      "source": "N8",
+      "target": "N4",
+      "relation": "导致安全设计缺失",
+      "confidence": 0.8
+    },
+    {
+      "source": "N9",
+      "target": "N4",
+      "relation": "导致安全设计缺失",
+      "confidence": 0.8
+    },
+    {
+      "source": "N11",
+      "target": "N1",
+      "relation": "增加外来火源风险",
+      "confidence": 0.6
+    },
+    {
+      "source": "N12",
+      "target": "N1",
+      "relation": "可能产生火源",
+      "confidence": 0.7
+    }
+  ],
+  "_metadata": {
+    "filename": "顺义区“12·19”较大火灾事故调查报告.pdf",
+    "text_hash": "0bb853705b2407d4439bf10b06acd8f7"
+  }
+}

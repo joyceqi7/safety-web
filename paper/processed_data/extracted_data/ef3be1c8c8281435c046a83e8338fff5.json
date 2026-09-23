@@ -1,0 +1,200 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "作业人员未正确穿戴救生衣",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "登船梯安全防护设施不完善",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "夜间作业照明不足",
+      "type": "环境不安全因素",
+      "features": [
+        3,
+        4,
+        2,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "船岸安全通道检查程序不完善",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "安全培训教育不足",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "应急预案及演练不足",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "风险辨识管控不到位",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "监护人员未有效履行监护职责",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "码头临水作业安全标准未完全落实",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "作业人员水上自救能力不足",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        2,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N3",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N4",
+      "target": "N9",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N5",
+      "target": "N7",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N6",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N6",
+      "target": "N8",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N0",
+      "target": "N9",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N1",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N2",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N7",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.75
+    }
+  ],
+  "_metadata": {
+    "filename": "9f1d7cfa74312dd2d4b7298b4022f282.pdf",
+    "text_hash": "ef3be1c8c8281435c046a83e8338fff5"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "起重作业人员违章操作",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "吊装配电箱作业时起重伤害",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "多班组交叉作业风险管控不足",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "作业现场警示区域管理不规范",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        2,
+        2,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N4",
+      "name": "起重作业人员安全培训不足",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "风险辨识与评估制度不完善",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "隐患排查治理不到位",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N5",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N6",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N2",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.6
+    }
+  ],
+  "_metadata": {
+    "filename": "c4050a9ff4d4f065a84f3468fc362d2e.pdf",
+    "text_hash": "cf04b1ec7836b6fd33f438aef0298282"
+  }
+}

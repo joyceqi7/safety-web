@@ -1,0 +1,194 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "违章指挥进行有限空间作业",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "违规进行有限空间作业",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "盲目施救",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        2,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "井下有毒有害气体超标",
+      "type": "环境不安全因素",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "未制定有限空间作业方案并进行作业审批",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "未对作业人员进行安全生产教育培训",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "未落实安全交底",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "未安排专门人员进行现场管理",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "未为工人配备劳动防护用品、安全警示标志、安全防护设备、应急救援装备",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "施工现场隐患排查和日常检查缺失",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N4",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N5",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N6",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N7",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N8",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N9",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N1",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N3",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.7
+    }
+  ],
+  "_metadata": {
+    "filename": "北京清河水利建设集团有限公司“8·21”一般生产安全事故调查处理情况（定稿发布）.pdf",
+    "text_hash": "63b35515c10be62d6ac288290d55d43c"
+  }
+}

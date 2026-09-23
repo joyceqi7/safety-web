@@ -1,0 +1,212 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "未正确穿戴个人防护用品",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "拆卸管线接口操作不当",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        2,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "未确认油路管线是否完全泄压排空",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "作业前风险辨识不到位",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "作业过程安全监护不力",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "机械密封静环定位销开裂，密封面损坏",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "机封油被浓硫酸污染",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "管道内存在0.09Mpa余压",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "企业未能督促从业人员严格执行安全操作规程",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "检维修方案针对性不强",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "N5",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.95
+    },
+    {
+      "source": "N6",
+      "target": "N7",
+      "relation": "伴随",
+      "confidence": 0.8
+    },
+    {
+      "source": "N3",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N3",
+      "target": "N9",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "未能阻止",
+      "confidence": 0.9
+    },
+    {
+      "source": "N4",
+      "target": "N1",
+      "relation": "未能阻止",
+      "confidence": 0.9
+    },
+    {
+      "source": "N8",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N8",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N2",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "伴随",
+      "confidence": 0.7
+    },
+    {
+      "source": "N1",
+      "target": "N6",
+      "relation": "触发泄漏",
+      "confidence": 0.9
+    },
+    {
+      "source": "N7",
+      "target": "N1",
+      "relation": "增加风险",
+      "confidence": 0.8
+    }
+  ],
+  "_metadata": {
+    "filename": "17dfe346692fe40d4d4f080358ae268d.pdf",
+    "text_hash": "45959a67ff39ebd3baba00ebe683abca"
+  }
+}

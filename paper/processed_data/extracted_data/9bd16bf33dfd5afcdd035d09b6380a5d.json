@@ -1,0 +1,175 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "强降雨天气下冒险组织作业",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "未执行极端暴雨天气停产撤人制度",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "安全教育培训不足（培训时长仅16小时）",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N3",
+      "name": "水仓容量有限且排水设备非工作状态",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "矿区岩溶发育、地表塌陷及裂缝",
+      "type": "环境不安全因素",
+      "features": [
+        4,
+        5,
+        4,
+        5,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "强降雨（降雨量155.9mm）",
+      "type": "环境不安全因素",
+      "features": [
+        3,
+        5,
+        2,
+        5,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "未按计划对矿山实施清单化排查",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N7",
+      "name": "未督促企业落实强降雨停产撤人指令",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "瞒报事故、伪造现场、作伪证",
+      "type": "人的不安全行为",
+      "features": [
+        2,
+        5,
+        5,
+        5,
+        3
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N5",
+      "target": "N4",
+      "relation": "加剧",
+      "confidence": 0.9
+    },
+    {
+      "source": "N4",
+      "target": "N3",
+      "relation": "导致涌水超过水仓容量",
+      "confidence": 0.85
+    },
+    {
+      "source": "N0",
+      "target": "N3",
+      "relation": "在排水设备非工作状态下作业",
+      "confidence": 0.8
+    },
+    {
+      "source": "N1",
+      "target": "N0",
+      "relation": "未执行制度导致冒险作业",
+      "confidence": 0.9
+    },
+    {
+      "source": "N2",
+      "target": "N0",
+      "relation": "培训不足导致风险意识薄弱",
+      "confidence": 0.7
+    },
+    {
+      "source": "N7",
+      "target": "N1",
+      "relation": "监管不力导致制度未落实",
+      "confidence": 0.8
+    },
+    {
+      "source": "N6",
+      "target": "N7",
+      "relation": "排查缺失导致监管漏洞",
+      "confidence": 0.7
+    },
+    {
+      "source": "N8",
+      "target": "N0",
+      "relation": "瞒报行为掩盖事故原因",
+      "confidence": 0.6
+    }
+  ],
+  "_metadata": {
+    "filename": "石柱自治县万宝铅锌矿“9·30”较大透水事故调查报告.pdf",
+    "text_hash": "9bd16bf33dfd5afcdd035d09b6380a5d"
+  }
+}

@@ -1,0 +1,251 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "周*超速行驶",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        2,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "周*未认真观察前方道路",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        2,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "李*烊驾驶安全设施不全的车辆",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "车辆后下部防护装置缺失",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        4,
+        3,
+        3,
+        1
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "车辆反光标识缺失",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        3,
+        3,
+        3,
+        1
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N5",
+      "name": "路面潮湿",
+      "type": "环境不安全因素",
+      "features": [
+        3,
+        3,
+        2,
+        2,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N6",
+      "name": "蓝海公司未落实GPS动态监管",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "蓝海公司未落实安全教育培训",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "诺信公司未消除超速隐患",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "荣友公司未督促出车检查",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N10",
+      "name": "渝中区运管所监管不到位",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N11",
+      "name": "渝中区交通局监督不力",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N12",
+      "name": "渝中区执法大队检查不深入",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "N6",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N7",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N8",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N9",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N10",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N10",
+      "target": "N7",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N11",
+      "target": "N10",
+      "relation": "导致",
+      "confidence": 0.5
+    },
+    {
+      "source": "N12",
+      "target": "N7",
+      "relation": "导致",
+      "confidence": 0.5
+    },
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N2",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N2",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N5",
+      "target": "N0",
+      "relation": "加剧",
+      "confidence": 0.3
+    }
+  ],
+  "_metadata": {
+    "filename": "G5021石渝高速（重庆段）“4·1”较大道路交通事故(1).pdf",
+    "text_hash": "cf28525a01c46d9271678166cb83e337"
+  }
+}

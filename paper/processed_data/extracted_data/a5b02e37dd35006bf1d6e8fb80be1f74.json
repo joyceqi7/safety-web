@@ -1,0 +1,200 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "未执行先通风再检测后作业规定",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "盲目施救",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "未配备劳动防护用品",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "操作走道通风不良",
+      "type": "环境不安全因素",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "化粪池有毒有害气体溢出",
+      "type": "环境不安全因素",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "风向将有毒气体吹向操作走道",
+      "type": "环境不安全因素",
+      "features": [
+        2,
+        4,
+        3,
+        2,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "未建立有限空间安全管理制度",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "未进行安全教育培训",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "未制定应急预案",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "未设置有限空间安全警示标志",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        2,
+        2,
+        1
+      ],
+      "is_high_risk": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "N6",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N7",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N7",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N8",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N2",
+      "target": "N0",
+      "relation": "加剧",
+      "confidence": 0.7
+    },
+    {
+      "source": "N2",
+      "target": "N1",
+      "relation": "加剧",
+      "confidence": 0.7
+    },
+    {
+      "source": "N3",
+      "target": "N4",
+      "relation": "加剧",
+      "confidence": 0.6
+    },
+    {
+      "source": "N5",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    }
+  ],
+  "_metadata": {
+    "filename": "重庆长寿五宝农业开发有限公司“11·29”较大中毒和窒息事故调查报告.pdf",
+    "text_hash": "a5b02e37dd35006bf1d6e8fb80be1f74"
+  }
+}

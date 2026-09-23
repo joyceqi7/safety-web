@@ -1,0 +1,212 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "非燃气专用软管未有效固定且老化",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "燃气灶无熄火保护装置",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "未安装燃气泄漏报警装置",
+      "type": "物的不安全状态",
+      "features": [
+        4,
+        4,
+        5,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "配电箱内开关导线虚接产生电火花",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        4,
+        4,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "涞水宏信物业公司未取得燃气经营许可证从事燃气经营活动",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "涞水宏信物业公司入户安全检查不到位",
+      "type": "管理缺陷",
+      "features": [
+        5,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "燕鑫湖液化气站向不符合安全用气条件的用户供气",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "燕鑫湖液化气站未履行入户安全检查职责",
+      "type": "管理缺陷",
+      "features": [
+        5,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "用户使用非燃气专用软管且未有效固定",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "用户未安装燃气泄漏报警装置",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        4,
+        5,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N8",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N9",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N5",
+      "target": "N0",
+      "relation": "未能发现",
+      "confidence": 0.8
+    },
+    {
+      "source": "N5",
+      "target": "N1",
+      "relation": "未能发现",
+      "confidence": 0.8
+    },
+    {
+      "source": "N5",
+      "target": "N2",
+      "relation": "未能发现",
+      "confidence": 0.8
+    },
+    {
+      "source": "N7",
+      "target": "N0",
+      "relation": "未能发现",
+      "confidence": 0.8
+    },
+    {
+      "source": "N7",
+      "target": "N1",
+      "relation": "未能发现",
+      "confidence": 0.8
+    },
+    {
+      "source": "N7",
+      "target": "N2",
+      "relation": "未能发现",
+      "confidence": 0.8
+    },
+    {
+      "source": "N4",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N6",
+      "target": "N7",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N0",
+      "target": "N3",
+      "relation": "导致燃气泄漏与电火花相遇",
+      "confidence": 0.9
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "relation": "引爆泄漏燃气",
+      "confidence": 0.9
+    }
+  ],
+  "_metadata": {
+    "filename": "2房山区3.15事故调查报告(发布定稿)-11时.pdf",
+    "text_hash": "febed116cb2be7d1121e58dc561fe38b"
+  }
+}

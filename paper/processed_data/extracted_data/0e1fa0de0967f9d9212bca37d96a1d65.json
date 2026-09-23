@@ -1,0 +1,359 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "韩某某未关紧气瓶阀门导致液化石油气泄漏",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "橡胶软管破损（黄豆大小漏洞）",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        3,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "燃气灶具燃烧器和调压器不符合国家标准",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "气瓶与燃气燃烧器具布置在同一房间内",
+      "type": "环境不安全因素",
+      "features": [
+        4,
+        4,
+        2,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "韩某某未经燃气知识专业培训",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N5",
+      "name": "韩某某发现泄漏后未正确处置（打开排风扇和电扇）",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        2,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "韩某某未委托具有资质单位安装燃气设施",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N7",
+      "name": "韩某某对燃气设施维护检修不到位",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N8",
+      "name": "韩某某未开展事故应急演练",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N9",
+      "name": "房主王某某私自加盖违章建筑",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N10",
+      "name": "房主王某某将营业执照租借给韩某某使用",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N11",
+      "name": "房主王某某对韩某某经营活动失管失察",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N12",
+      "name": "供气人王某某未取得燃气经营许可非法供气",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N13",
+      "name": "北京欣欣向荣益源燃气销售有限公司向非法个人供气",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N14",
+      "name": "北京欣欣向荣益源燃气销售有限公司擅自为非自有气瓶充装燃气",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N15",
+      "name": "北京欣欣向荣益源燃气销售有限公司用户服务档案、充装记录缺失",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N16",
+      "name": "于家务乡综合行政执法队未建立完整基础工作台账",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N17",
+      "name": "于家务乡综合行政执法队未制定执法计划",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N18",
+      "name": "于家务乡综合行政执法队未发现伊品羊杂馆安全隐患",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N1",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N2",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N4",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N5",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N6",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N7",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N8",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N9",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N10",
+      "target": "N11",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N11",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N12",
+      "target": "N13",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N13",
+      "target": "N14",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N14",
+      "target": "N15",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N16",
+      "target": "N17",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N17",
+      "target": "N18",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N18",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.7
+    }
+  ],
+  "_metadata": {
+    "filename": "事故调查报告.pdf",
+    "text_hash": "0e1fa0de0967f9d9212bca37d96a1d65"
+  }
+}

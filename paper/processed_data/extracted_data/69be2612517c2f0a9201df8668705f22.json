@@ -1,0 +1,239 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "重型半挂牵引车越实线超车",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "摩托车驾驶人无证驾驶",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "摩托车超员载人（核载2人实载4人）",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        4,
+        2,
+        3,
+        1
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "摩托车驾乘人员未佩戴安全头盔",
+      "type": "人的不安全行为",
+      "features": [
+        5,
+        4,
+        1,
+        2,
+        1
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "摩托车悬挂其他车辆号牌（套牌）",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        2,
+        3,
+        3,
+        1
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N5",
+      "name": "木洞镇政府未严格开展摩电车综合治理",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "木洞镇政府年度监督检查计划不科学",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N7",
+      "name": "木洞公巡大队未科学安排巡逻勤务",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "木洞公巡大队未有效整治国道G348突出违法行为",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "木洞公巡大队未强化周末摩电车路面执法",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N10",
+      "name": "宁夏昇晟公司未对驾驶员定期安全教育培训",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N11",
+      "name": "宁夏昇晟公司未对车辆开展日常安全检查",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N12",
+      "name": "道路中心双黄实线路段允许越线超车（设计缺陷）",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        2,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N0",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N0",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N5",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N7",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.5
+    },
+    {
+      "source": "N8",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.5
+    },
+    {
+      "source": "N9",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.5
+    },
+    {
+      "source": "N10",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.3
+    },
+    {
+      "source": "N11",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.3
+    },
+    {
+      "source": "N12",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.4
+    }
+  ],
+  "_metadata": {
+    "filename": "重庆巴南国道G348“4·19”较大道路交通事故调查报告.pdf",
+    "text_hash": "69be2612517c2f0a9201df8668705f22"
+  }
+}

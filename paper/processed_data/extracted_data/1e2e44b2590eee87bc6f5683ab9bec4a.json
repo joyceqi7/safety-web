@@ -1,0 +1,264 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "驾驶人超速行驶",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        2,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "驾驶人未安全观察",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "车辆制动系统失效（继动阀堵塞）",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "轮胎磨损严重（花纹不一致、胎面缺损）",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "企业未督促执行车辆维护制度",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "企业动态监控未实时处理超速",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "二级维护超期",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N7",
+      "name": "企业未保存培训记录",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        2,
+        3,
+        3,
+        1
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N8",
+      "name": "交巡警大队未查处机件不符违法行为",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N9",
+      "name": "运管所未开展专项检查",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N10",
+      "name": "运管所分类管理未考虑综合因素",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N11",
+      "name": "交巡警大队日常检查流于形式",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N12",
+      "name": "执法大队未将反复违法企业列为重点",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N13",
+      "name": "驾驶人事故后逃逸",
+      "type": "人的不安全行为",
+      "features": [
+        2,
+        5,
+        1,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N4",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N4",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N5",
+      "target": "N0",
+      "relation": "未能及时纠正",
+      "confidence": 0.8
+    },
+    {
+      "source": "N6",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N8",
+      "target": "N2",
+      "relation": "未能有效监管",
+      "confidence": 0.6
+    },
+    {
+      "source": "N9",
+      "target": "N4",
+      "relation": "未能有效监管",
+      "confidence": 0.7
+    },
+    {
+      "source": "N10",
+      "target": "N4",
+      "relation": "未能有效监管",
+      "confidence": 0.6
+    },
+    {
+      "source": "N11",
+      "target": "N4",
+      "relation": "未能有效监管",
+      "confidence": 0.7
+    },
+    {
+      "source": "N12",
+      "target": "N4",
+      "relation": "未能有效监管",
+      "confidence": 0.6
+    },
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "加剧",
+      "confidence": 0.8
+    },
+    {
+      "source": "N2",
+      "target": "N0",
+      "relation": "导致超速失控",
+      "confidence": 0.7
+    },
+    {
+      "source": "N1",
+      "target": "N13",
+      "relation": "导致",
+      "confidence": 0.5
+    }
+  ],
+  "_metadata": {
+    "filename": "重庆南川“7·24”较大道路交通事故.pdf",
+    "text_hash": "1e2e44b2590eee87bc6f5683ab9bec4a"
+  }
+}

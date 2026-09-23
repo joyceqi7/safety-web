@@ -1,0 +1,181 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "磷酸铁锂电池内短路故障",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "电缆沟两端未有效封堵",
+      "type": "物的不安全状态",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "未备案先建设",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N3",
+      "name": "未完全排除安全隐患继续运行",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "未制定事故应急处置预案",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        2,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "电池热失控喷射产物扩散",
+      "type": "环境不安全因素",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "电气火花（继电器动作）",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        4,
+        3,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "安全隐患排查不全面不彻底",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N8",
+      "name": "安全监督检查不到位",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.95
+    },
+    {
+      "source": "N1",
+      "target": "N5",
+      "relation": "促进",
+      "confidence": 0.9
+    },
+    {
+      "source": "N5",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N6",
+      "target": "N0",
+      "relation": "引发",
+      "confidence": 0.8
+    },
+    {
+      "source": "N2",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.75
+    },
+    {
+      "source": "N4",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N7",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N8",
+      "target": "N7",
+      "relation": "导致",
+      "confidence": 0.8
+    }
+  ],
+  "_metadata": {
+    "filename": "丰台区“4·16”较大火灾事故调查报告.pdf",
+    "text_hash": "d1d84cbc9212cab3e74b9b5ae983b972"
+  }
+}

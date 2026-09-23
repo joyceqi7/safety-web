@@ -1,0 +1,156 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "作业人员未关闭维修开关并上锁即伸手进入喂料器",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "喂料器旋转部件无联锁防护装置",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "管理人员未督促作业人员执行操作规程",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "企业未督促从业人员严格执行安全生产规章制度及操作规程",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "作业人员安全意识不足，违章作业",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "喂料器设计高度虽大于85cm但未能有效防止手部接触旋转部件",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "安全培训针对性不足，员工未能掌握能量隔离程序",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N7",
+      "name": "现场监管不到位，未能及时发现违章行为",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N2",
+      "target": "N0",
+      "relation": "未能阻止",
+      "confidence": 0.8
+    },
+    {
+      "source": "N3",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N1",
+      "target": "N0",
+      "relation": "未能防止伤害",
+      "confidence": 0.7
+    },
+    {
+      "source": "N5",
+      "target": "N1",
+      "relation": "设计不足",
+      "confidence": 0.6
+    },
+    {
+      "source": "N6",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.75
+    },
+    {
+      "source": "N7",
+      "target": "N0",
+      "relation": "未能及时发现",
+      "confidence": 0.8
+    }
+  ],
+  "_metadata": {
+    "filename": "4c58320dbb2314d325c3dde10bb24e8e.pdf",
+    "text_hash": "1aa50508628093e24c55078cce624710"
+  }
+}

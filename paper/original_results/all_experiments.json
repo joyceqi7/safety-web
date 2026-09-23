@@ -1,0 +1,178 @@
+{
+  "noise_robustness": {
+    "levels": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3
+    ],
+    "summary": {
+      "GATv2": {
+        "f1_at_noise_0": 0.98,
+        "f1_at_noise_max": 0.7533683489381138,
+        "decay_rate": 0.23125678679784306
+      },
+      "HierarchicalGATv2": {
+        "f1_at_noise_0": 0.98,
+        "f1_at_noise_max": 0.84,
+        "decay_rate": 0.14285714285714288
+      },
+      "UncertaintyGATv2": {
+        "f1_at_noise_0": 0.9478895257946847,
+        "f1_at_noise_max": 0.7060645306605102,
+        "decay_rate": 0.2551193873900389
+      },
+      "DynamicTemporalGATv2": {
+        "f1_at_noise_0": 0.9695928824821218,
+        "f1_at_noise_max": 0.6545863260047151,
+        "decay_rate": 0.32488538454511096
+      },
+      "GATv2Transformer": {
+        "f1_at_noise_0": 0.930917265200943,
+        "f1_at_noise_max": 0.6380748663101604,
+        "decay_rate": 0.3145740334159246
+      },
+      "MultiScaleGATv2": {
+        "f1_at_noise_0": 0.98,
+        "f1_at_noise_max": 0.7661831565273869,
+        "decay_rate": 0.21818045252307458
+      }
+    }
+  },
+  "edge_sparsity": {
+    "ratios": [
+      1.0,
+      0.7,
+      0.5,
+      0.3,
+      0.1
+    ],
+    "summary": {
+      "GATv2": {
+        "f1_at_full": 0.98,
+        "f1_at_10pct": 0.990131037885849,
+        "retention_rate": 1.0103377937610705
+      },
+      "HierarchicalGATv2": {
+        "f1_at_full": 0.98,
+        "f1_at_10pct": 0.990131037885849,
+        "retention_rate": 1.0103377937610705
+      },
+      "UncertaintyGATv2": {
+        "f1_at_full": 0.9478895257946847,
+        "f1_at_10pct": 0.958894724823019,
+        "retention_rate": 1.011610212718732
+      },
+      "DynamicTemporalGATv2": {
+        "f1_at_full": 0.9695928824821218,
+        "f1_at_10pct": 0.9695928824821218,
+        "retention_rate": 1.0
+      },
+      "GATv2Transformer": {
+        "f1_at_full": 0.930917265200943,
+        "f1_at_10pct": 0.9805152630439489,
+        "retention_rate": 1.0532786314069489
+      },
+      "MultiScaleGATv2": {
+        "f1_at_full": 0.98,
+        "f1_at_10pct": 0.98,
+        "retention_rate": 1.0
+      }
+    }
+  },
+  "few_shot": {
+    "ratios": [
+      0.1,
+      0.2,
+      0.3,
+      0.5,
+      0.7,
+      1.0
+    ],
+    "summary": {
+      "GATv2": {
+        "f1_at_10pct": 0.9443776520509194,
+        "f1_at_100pct": 0.0,
+        "efficiency_ratio": 94.43776520509194
+      },
+      "HierarchicalGATv2": {
+        "f1_at_10pct": 0.9523875227407452,
+        "f1_at_100pct": 0.0,
+        "efficiency_ratio": 95.23875227407451
+      },
+      "UncertaintyGATv2": {
+        "f1_at_10pct": 0.9443776520509194,
+        "f1_at_100pct": 0.0,
+        "efficiency_ratio": 94.43776520509194
+      },
+      "DynamicTemporalGATv2": {
+        "f1_at_10pct": 0.9427226383687057,
+        "f1_at_100pct": 0.0,
+        "efficiency_ratio": 94.27226383687056
+      },
+      "GATv2Transformer": {
+        "f1_at_10pct": 0.693831672039257,
+        "f1_at_100pct": 0.0,
+        "efficiency_ratio": 69.3831672039257
+      },
+      "MultiScaleGATv2": {
+        "f1_at_10pct": 0.950077519379845,
+        "f1_at_100pct": 0.0,
+        "efficiency_ratio": 95.0077519379845
+      }
+    }
+  },
+  "kfold": {
+    "GATv2": {
+      "accuracy_mean": 0.9412734104115312,
+      "accuracy_std": 0.03281991934666895,
+      "f1_mean": 0.8982533677255752,
+      "f1_std": 0.05770271665613836,
+      "auc_mean": 0.9589318894114399,
+      "auc_std": 0.027836136274253097
+    },
+    "HierarchicalGATv2": {
+      "accuracy_mean": 0.9586881734941249,
+      "accuracy_std": 0.014114380096189158,
+      "f1_mean": 0.9309168627729232,
+      "f1_std": 0.023275530831549065,
+      "auc_mean": 0.9307816516272925,
+      "auc_std": 0.048257672775091326
+    },
+    "UncertaintyGATv2": {
+      "accuracy_mean": 0.9414374985503029,
+      "accuracy_std": 0.03231714007088926,
+      "f1_mean": 0.8976535603876767,
+      "f1_std": 0.05780064840060279,
+      "auc_mean": 0.9606782108518381,
+      "auc_std": 0.028830377440529735
+    },
+    "DynamicTemporalGATv2": {
+      "accuracy_mean": 0.9597418133408683,
+      "accuracy_std": 0.0168962203300589,
+      "f1_mean": 0.9330547043438562,
+      "f1_std": 0.028175832046733598,
+      "auc_mean": 0.9534757314489479,
+      "auc_std": 0.025851603369353895
+    },
+    "GATv2Transformer": {
+      "accuracy_mean": 0.7858313248439072,
+      "accuracy_std": 0.0648206723796716,
+      "f1_mean": 0.47038020317340506,
+      "f1_std": 0.04330909366644608,
+      "auc_mean": 0.4951802344650975,
+      "auc_std": 0.1769537311743648
+    },
+    "MultiScaleGATv2": {
+      "accuracy_mean": 0.9459030400411608,
+      "accuracy_std": 0.0348993206064497,
+      "f1_mean": 0.9055869861634281,
+      "f1_std": 0.06268720501558962,
+      "auc_mean": 0.9590914814878182,
+      "auc_std": 0.028532405882247203
+    }
+  }
+}

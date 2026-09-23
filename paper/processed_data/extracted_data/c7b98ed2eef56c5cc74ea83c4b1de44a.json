@@ -1,0 +1,289 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "燃气管道主阀门法兰垫片选用不耐腐蚀的甲基乙烯基硅橡胶材质",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "板桥液化气站长期向液化石油气中掺混二甲醚",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "冷藏库将燃气管道主阀门封闭在通风不良的场所内，未设置通风和燃气泄漏报警设施",
+      "type": "环境不安全因素",
+      "features": [
+        4,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "京日东大公司未委托有资质单位自行安装燃气设施",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "京日东大公司未建立燃气设施安全管理制度，未开展日常检查和维护",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "京日东大公司未对操作人员开展燃气安全知识和操作技能培训",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N6",
+      "name": "板桥液化气站未对京日东大公司燃气设施定期安全检查",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "燃气管道主阀门八孔法兰仅使用四组螺栓连接，垫片与管道同心度低",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "冷藏库内安装非防爆电器（荧光灯、风机），运行中可能产生电气火花",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "顺义区牛栏山镇政府履行属地监管责任不到位，未发现燃气设施安全隐患",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N10",
+      "name": "顺义区城市管理委员会履行燃气行业管理职责不到位，未发现掺混二甲醚问题",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N11",
+      "name": "顺义区消防救援支队监督检查履职不到位，未发现擅自安装燃气设施和消防隐患",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N12",
+      "name": "顺义区市场监督管理局履行产品质量安全监管责任不到位，未发现掺混二甲醚",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N13",
+      "name": "京日东大公司未对燃气设施进行风险评估",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N14",
+      "name": "板桥液化气站非法购买二甲醚并充装销售",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N1",
+      "target": "N0",
+      "relation": "加速腐蚀",
+      "confidence": 0.95
+    },
+    {
+      "source": "N0",
+      "target": "N7",
+      "relation": "导致垫片密封性能下降",
+      "confidence": 0.9
+    },
+    {
+      "source": "N7",
+      "target": "N2",
+      "relation": "导致燃气泄漏至封闭空间",
+      "confidence": 0.85
+    },
+    {
+      "source": "N2",
+      "target": "N8",
+      "relation": "形成爆炸性混合气体",
+      "confidence": 0.9
+    },
+    {
+      "source": "N8",
+      "target": "N0",
+      "relation": "提供点火源",
+      "confidence": 0.8
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "relation": "导致燃气设施安装不规范",
+      "confidence": 0.9
+    },
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "导致垫片腐蚀未被发现",
+      "confidence": 0.85
+    },
+    {
+      "source": "N5",
+      "target": "N0",
+      "relation": "导致操作人员缺乏安全意识",
+      "confidence": 0.7
+    },
+    {
+      "source": "N6",
+      "target": "N0",
+      "relation": "导致垫片腐蚀未被发现",
+      "confidence": 0.85
+    },
+    {
+      "source": "N9",
+      "target": "N3",
+      "relation": "未能制止违规建设",
+      "confidence": 0.8
+    },
+    {
+      "source": "N10",
+      "target": "N1",
+      "relation": "未能发现掺混二甲醚",
+      "confidence": 0.85
+    },
+    {
+      "source": "N11",
+      "target": "N3",
+      "relation": "未能发现消防隐患",
+      "confidence": 0.8
+    },
+    {
+      "source": "N12",
+      "target": "N1",
+      "relation": "未能发现掺混二甲醚",
+      "confidence": 0.85
+    },
+    {
+      "source": "N14",
+      "target": "N1",
+      "relation": "导致掺混行为",
+      "confidence": 0.95
+    }
+  ],
+  "_metadata": {
+    "filename": "12.3事故调查报告.pdf",
+    "text_hash": "c7b98ed2eef56c5cc74ea83c4b1de44a"
+  }
+}

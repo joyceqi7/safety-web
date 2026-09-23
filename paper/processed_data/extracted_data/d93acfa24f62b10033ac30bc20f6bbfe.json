@@ -1,0 +1,258 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "张明超违规放散天然气管道内气体",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "张明超不具备操作资格擅自拆除改装燃气设施",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "杨杰私自安排个人进行燃气改造施工",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "杨杰违规出售燃气（合同过期未续签）",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "燃气管道盲板拆除后未引出放散管至室外",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "京容合公司厨房内电气设备（灭蚊器、配电柜）存在电火花隐患",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "天然气泄漏后扩散至相邻区域形成爆炸性混合气体",
+      "type": "环境不安全因素",
+      "features": [
+        2,
+        5,
+        3,
+        3,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "市燃气集团对员工私自承揽燃气设施拆改迁工程失察失管",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "市燃气集团三分公司未严格落实用户停气程序",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "市燃气集团三分公司违规售气（未续签合同）",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N10",
+      "name": "通州区城市管理委燃气供应安全监管不到位",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N11",
+      "name": "通州区城管执法局未核查燃气使用矛盾问题",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N12",
+      "name": "梨园镇政府未按要求对事发用气点开展监督检查",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N13",
+      "name": "京容合公司装修工程未办理安全生产信息登记",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "N2",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N1",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.95
+    },
+    {
+      "source": "N0",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N4",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.95
+    },
+    {
+      "source": "N6",
+      "target": "N5",
+      "relation": "触发",
+      "confidence": 0.8
+    },
+    {
+      "source": "N7",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N8",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N9",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N10",
+      "target": "N7",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N11",
+      "target": "N8",
+      "relation": "导致",
+      "confidence": 0.5
+    },
+    {
+      "source": "N12",
+      "target": "N13",
+      "relation": "导致",
+      "confidence": 0.7
+    }
+  ],
+  "_metadata": {
+    "filename": "通州区“10·9”燃气爆炸事故调查报告.pdf",
+    "text_hash": "d93acfa24f62b10033ac30bc20f6bbfe"
+  }
+}

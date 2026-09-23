@@ -1,0 +1,383 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "王浩全未断开气源将气体皮带圈放在无通风气孔工具箱内",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "刘超超未确认气体皮带状态即接通气源",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "工具箱无通风气孔",
+      "type": "物的不安全状态",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "气体皮带长期悬空存在被误接风险",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        4,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "众锐徐州分公司现场管理人员未有效督促作业人员执行安全规定",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "建睿公司班组长安全交底流于形式",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "外高桥造船公司对分包单位安全生产统一协调管理不力",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "众锐徐州分公司主要负责人未有效督促检查安全生产工作",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "建睿公司主要负责人未有效督促检查安全生产工作",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "外高桥造船公司生产总监风险辨识工作组织不力",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N10",
+      "name": "搭载部管理人员风险辨识工作开展不力",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N11",
+      "name": "众锐徐州分公司班组长未及时发现并制止违规存放气体皮带",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N12",
+      "name": "建睿公司现场生产主管未有效督促作业人员执行操作规程",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N13",
+      "name": "建睿公司班组长未发现并制止未确认气体皮带状态的行为",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N14",
+      "name": "外高桥造船公司总经理组织风险辨识和隐患治理不力",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N15",
+      "name": "外高桥造船公司搭载部部长对管理人员履职不力失管失察",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N16",
+      "name": "外高桥造船公司民船项目部主管建造师未有效发现并制止违规行为",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N17",
+      "name": "外高桥造船公司搭载部作业长风险辨识不力且未有效制止违规行为",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N18",
+      "name": "众锐徐州分公司现场生产主管未有效督促作业人员执行安全制度",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 1.0
+    },
+    {
+      "source": "N1",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 1.0
+    },
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "间接导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N2",
+      "target": "N0",
+      "relation": "加剧",
+      "confidence": 0.8
+    },
+    {
+      "source": "N3",
+      "target": "N1",
+      "relation": "加剧",
+      "confidence": 0.8
+    },
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N5",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N6",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N6",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N7",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N8",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N9",
+      "target": "N10",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N10",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N11",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N12",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N13",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N14",
+      "target": "N9",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N15",
+      "target": "N10",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N16",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N17",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N18",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    }
+  ],
+  "_metadata": {
+    "filename": "8a0a520d1eabb283c37b239d4d3c2592.pdf",
+    "text_hash": "626eee7f61df8482c10433be49dd0033"
+  }
+}

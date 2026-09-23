@@ -1,0 +1,19 @@
+{
+ "total_graphs": 103,
+ "total_nodes": 1131,
+ "total_edges": 1122,
+ "avg_nodes": 10.980582524271844,
+ "avg_edges": 10.893203883495145,
+ "n_train_graphs": 72,
+ "n_val_graphs": 15,
+ "n_test_graphs": 16,
+ "test_nodes": 180,
+ "test_pos": 149,
+ "high_risk_ratio": 0.8010610079575596,
+ "rule_baseline": {
+  "acc": 0.9451812505722046,
+  "precision": 0.9359504132231405,
+  "recall": 1.0,
+  "f1": 0.9669156883671292
+ }
+}

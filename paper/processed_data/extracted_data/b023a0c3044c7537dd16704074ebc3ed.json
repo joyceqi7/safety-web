@@ -1,0 +1,200 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "塔式起重机拆卸作业中作业人员未正确使用安全带",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "安拆作业人员未取得相应岗位资格证或岗证不匹配",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "安拆作业中未设置专人全程现场旁站监督",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        2,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "安拆作业规程执行不到位，存在习惯性违章行为",
+      "type": "人的不安全行为",
+      "features": [
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "安全教育培训不足，从业人员安全意识薄弱",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        3,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "分包单位安全管理不到位，到岗履职情况核查不严",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N6",
+      "name": "大型机械设备安全管控不严，进场、安拆等环节管理缺失",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "监理单位对大型机械安拆安全管控不到位",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N8",
+      "name": "隐患排查治理不深入，未能及时发现并消除事故隐患",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        3,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "应急预案缺失或演练不足，应急响应能力不足",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N4",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N4",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N2",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N2",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N6",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N5",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N8",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N7",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N9",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.5
+    }
+  ],
+  "_metadata": {
+    "filename": "866b4ace0bf1a3c69b1a718104396048.pdf",
+    "text_hash": "b023a0c3044c7537dd16704074ebc3ed"
+  }
+}

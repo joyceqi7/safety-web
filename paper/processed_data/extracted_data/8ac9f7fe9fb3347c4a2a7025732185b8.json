@@ -1,0 +1,200 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "废品回收人员违规作业",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "易燃易爆物品违规存放",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "厂库房违规出租转租",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "安全监管职责不清",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "隐患排查治理不到位",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "安全培训教育不足",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N6",
+      "name": "消防设施缺失或失效",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        2,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "厂房结构不符合安全要求",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        4,
+        3,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "作业现场通风不良",
+      "type": "环境不安全因素",
+      "features": [
+        3,
+        4,
+        2,
+        3,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "应急响应不及时",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N2",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N3",
+      "target": "N4",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N4",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N5",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N1",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N0",
+      "target": "N6",
+      "relation": "导致",
+      "confidence": 0.5
+    },
+    {
+      "source": "N1",
+      "target": "N8",
+      "relation": "导致",
+      "confidence": 0.4
+    },
+    {
+      "source": "N6",
+      "target": "N9",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N7",
+      "target": "N8",
+      "relation": "导致",
+      "confidence": 0.5
+    },
+    {
+      "source": "N8",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.3
+    }
+  ],
+  "_metadata": {
+    "filename": "90d73de683ed5862b7a10aedac2a1b16.pdf",
+    "text_hash": "8ac9f7fe9fb3347c4a2a7025732185b8"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "未办理动火审批手续进行焊接作业",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "使用易燃材料（挤塑板、聚氨酯保温库板）",
+      "type": "物的不安全状态",
+      "features": [
+        4,
+        5,
+        3,
+        4,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "违法建设冷库（无规划许可、施工许可）",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "违规转包给无资质个人施工",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "未对工人进行安全教育和培训",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "未配备安全员和消防设施",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "临时拉设电线，存在短路风险",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        3,
+        3,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "存放液化石油气瓶和氧气瓶",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        3,
+        4,
+        5
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N8",
+      "name": "政府部门对违法建设巡查不到位",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N9",
+      "name": "未建立隐患排查整治台账",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "引燃",
+      "confidence": 0.95
+    },
+    {
+      "source": "N2",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.85
+    },
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N5",
+      "target": "N0",
+      "relation": "未能阻止",
+      "confidence": 0.7
+    },
+    {
+      "source": "N6",
+      "target": "N1",
+      "relation": "可能引燃",
+      "confidence": 0.6
+    },
+    {
+      "source": "N7",
+      "target": "N1",
+      "relation": "加剧火势",
+      "confidence": 0.8
+    },
+    {
+      "source": "N8",
+      "target": "N2",
+      "relation": "未能制止",
+      "confidence": 0.75
+    },
+    {
+      "source": "N9",
+      "target": "N2",
+      "relation": "未能发现",
+      "confidence": 0.7
+    }
+  ],
+  "_metadata": {
+    "filename": "通州区“5·9”较大火灾事故调查报告(定稿发布版)1224(新定稿).pdf",
+    "text_hash": "a23ab13838496a060055a469f6ca0d96"
+  }
+}

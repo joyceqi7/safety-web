@@ -1,0 +1,200 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "木工王玉违规高处临边堆放钢管",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "钢管无固定措施",
+      "type": "物的不安全状态",
+      "features": [
+        4,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "外脚手架踢脚板缺失",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        3,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N3",
+      "name": "安全教育培训不足（1.5学时）",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N4",
+      "name": "全员安全生产责任制不健全（副班组长岗位责任缺失）",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        3,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N5",
+      "name": "隐患排查治理不到位（未发现临边堆放钢管隐患）",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "总承包单位未有效督促分包单位安全管理",
+      "type": "管理缺陷",
+      "features": [
+        4,
+        3,
+        3,
+        3,
+        3
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N7",
+      "name": "劳务分包单位自行开展安全技术交底",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        3,
+        3,
+        3,
+        2
+      ],
+      "is_high_risk": false
+    },
+    {
+      "id": "N8",
+      "name": "钢管从外脚手架间隙穿出",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        4
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N9",
+      "name": "作业层下方无安全平网兜底",
+      "type": "物的不安全状态",
+      "features": [
+        3,
+        4,
+        2,
+        3,
+        2
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N1",
+      "target": "N8",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N8",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N3",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.6
+    },
+    {
+      "source": "N4",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.5
+    },
+    {
+      "source": "N5",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.8
+    },
+    {
+      "source": "N6",
+      "target": "N5",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N7",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.5
+    },
+    {
+      "source": "N2",
+      "target": "N8",
+      "relation": "导致",
+      "confidence": 0.4
+    },
+    {
+      "source": "N9",
+      "target": "N8",
+      "relation": "导致",
+      "confidence": 0.6
+    }
+  ],
+  "_metadata": {
+    "filename": "b6d7fff666e7474dd570f3ffd8d31f19.pdf",
+    "text_hash": "c1b4bc119806d318118912dab0061963"
+  }
+}

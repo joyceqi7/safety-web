@@ -1,0 +1,168 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "name": "作业人员未取得高处作业特种作业操作证",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N1",
+      "name": "作业人员未规范使用安全带",
+      "type": "人的不安全行为",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N2",
+      "name": "未按施工方案搭设脚手架",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        2,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N3",
+      "name": "现场管理人员安排无证人员高处作业",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        5,
+        3,
+        4,
+        3
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N4",
+      "name": "监护人员未及时发现并制止未规范使用安全带",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N5",
+      "name": "主要负责人未督促检查安全生产工作",
+      "type": "管理缺陷",
+      "features": [
+        2,
+        4,
+        4,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N6",
+      "name": "企业未督促从业人员执行安全规章制度和佩戴防护用品",
+      "type": "管理缺陷",
+      "features": [
+        3,
+        4,
+        3,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    },
+    {
+      "id": "N7",
+      "name": "高处作业平台缺失（未搭设脚手架且未租到高空作业平台）",
+      "type": "物的不安全状态",
+      "features": [
+        2,
+        5,
+        2,
+        4,
+        2
+      ],
+      "is_high_risk": true
+    }
+  ],
+  "edges": [
+    {
+      "source": "N3",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N3",
+      "target": "N2",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N4",
+      "target": "N1",
+      "relation": "未能制止",
+      "confidence": 0.8
+    },
+    {
+      "source": "N5",
+      "target": "N3",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N6",
+      "target": "N0",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N6",
+      "target": "N1",
+      "relation": "导致",
+      "confidence": 0.7
+    },
+    {
+      "source": "N2",
+      "target": "N7",
+      "relation": "导致",
+      "confidence": 0.9
+    },
+    {
+      "source": "N0",
+      "target": "N1",
+      "relation": "叠加",
+      "confidence": 0.6
+    },
+    {
+      "source": "N1",
+      "target": "N0",
+      "relation": "叠加",
+      "confidence": 0.6
+    }
+  ],
+  "_metadata": {
+    "filename": "4adec82f2e77b428d7db091b66e3423a.pdf",
+    "text_hash": "dc0f8354ca28281953ae8370dcd2900b"
+  }
+}
